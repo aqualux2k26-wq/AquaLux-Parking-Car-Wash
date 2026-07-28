@@ -1,0 +1,100 @@
+/* Book A Wash Section CSS */
+.book-wash-section {
+  padding: 100px 0;
+  position: relative;
+  background: linear-gradient(180deg, #0B192C 0%, #0F2C59 50%, #0B192C 100%);
+}
+
+.book-wash-form-card {
+  max-width: 720px;
+  margin: 48px auto 0 auto;
+  background: linear-gradient(160deg, #0F2C59 0%, #0B192C 100%);
+  border: 1px solid rgba(203, 213, 225, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 640px) {
+  .book-wash-form-card {
+    padding: 24px;
+  }
+}
+
+.book-wash-field-group {
+  margin-bottom: 24px;
+}
+
+.book-wash-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #CBD5E1;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.book-wash-input,
+.book-wash-textarea {
+  width: 100%;
+  background: rgba(11, 25, 44, 0.8);
+  border: 1px solid rgba(203, 213, 225, 0.25);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.book-wash-input:focus,
+.book-wash-textarea:focus {
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+  background: #0B192C;
+}
+
+.book-wash-select {
+  width: 100%;
+  background: rgba(11, 25, 44, 0.8);
+  border: 1px solid rgba(203, 213, 225, 0.25);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  outline: none;
+  cursor: pointer;
+}
+
+.book-wash-select option {
+  background: #0B192C;
+  color: #FFFFFF;
+}
+
+.book-wash-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #1D4ED8 0%, #0F2C59 100%);
+  color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 25px rgba(29, 78, 216, 0.4);
+}
+
+.book-wash-submit-btn:hover {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  border-color: #FFFFFF;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.5);
+  transform: translateY(-2px);
+}

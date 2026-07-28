@@ -1,0 +1,61 @@
+/* About Section CSS */
+.about-section {
+  padding: 100px 0;
+  position: relative;
+  background: linear-gradient(180deg, #0B192C 0%, #0F2C59 50%, #0B192C 100%);
+}
+
+.about-header-tag {
+  color: #38BDF8;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.about-stat-card {
+  background: rgba(11, 25, 44, 0.75);
+  border: 1px solid rgba(203, 213, 225, 0.2);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.about-stat-card:hover {
+  border-color: #38BDF8;
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(29, 78, 216, 0.25);
+}
+
+.about-stat-value {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.about-stat-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.about-stat-desc {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  line-height: 1.5;
+}

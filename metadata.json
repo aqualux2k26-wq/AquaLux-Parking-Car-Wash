@@ -1,0 +1,6 @@
+{
+  "name": "AquaLux Parking Car Wash",
+  "description": "Premium & Eco-Friendly On-Site Parking Car Wash & Valet Services at aqualuxparkingcarwash.com",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

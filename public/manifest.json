@@ -1,0 +1,17 @@
+{
+  "short_name": "AquaLux",
+  "name": "AquaLux Parking Car Wash",
+  "description": "Executive & Eco-Friendly On-Site Parking Car Wash & Valet Management",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0F2C59",
+  "theme_color": "#0F2C59",
+  "display": "standalone",
+  "orientation": "portrait"
+}

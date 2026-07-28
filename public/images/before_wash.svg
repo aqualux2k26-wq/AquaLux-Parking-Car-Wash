@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="garageBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B192C"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="dirtyCarPaint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <pattern id="dustTexture" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.5" fill="#94A3B8" opacity="0.4"/>
+      <circle cx="15" cy="12" r="2" fill="#64748B" opacity="0.5"/>
+      <circle cx="10" cy="18" r="1" fill="#CBD5E1" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Parking Garage Background -->
+  <rect width="1200" height="675" fill="url(#garageBg)"/>
+  <!-- Garage Pillars & Markings -->
+  <rect x="50" y="0" width="100" height="675" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  <rect x="1050" y="0" width="100" height="675" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  <line x1="200" y1="580" x2="1000" y2="580" stroke="#CBD5E1" stroke-width="6" stroke-dasharray="20 10" opacity="0.3"/>
+
+  <!-- Dim Garage Overhead Lighting -->
+  <ellipse cx="600" cy="80" rx="300" ry="40" fill="#CBD5E1" opacity="0.1"/>
+
+  <!-- Dust & Grime Layer on Ground -->
+  <path d="M 200 550 C 400 580, 800 580, 1000 550 L 1050 675 L 150 675 Z" fill="#0F172A" opacity="0.8"/>
+
+  <!-- Dusty Luxury Sedan Body -->
+  <g transform="translate(150, 180)">
+    <!-- Main Chassis -->
+    <path d="M 120 280 C 150 200, 250 140, 420 130 C 580 120, 720 160, 800 220 L 880 260 C 920 280, 930 330, 900 360 C 860 390, 200 390, 100 360 C 80 330, 90 290, 120 280 Z" fill="url(#dirtyCarPaint)"/>
+    
+    <!-- Dust Overlay -->
+    <path d="M 120 280 C 150 200, 250 140, 420 130 C 580 120, 720 160, 800 220 L 880 260 C 920 280, 930 330, 900 360 C 860 390, 200 390, 100 360 C 80 330, 90 290, 120 280 Z" fill="url(#dustTexture)"/>
+
+    <!-- Dirty Windows -->
+    <path d="M 280 160 C 350 145, 480 140, 560 145 C 640 150, 700 180, 730 210 L 300 210 Z" fill="#1E293B" opacity="0.9"/>
+    <!-- Mud streaks on glass -->
+    <path d="M 320 170 Q 380 190 420 205" stroke="#64748B" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+    <path d="M 500 160 Q 560 185 620 200" stroke="#64748B" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Dull Wheels -->
+    <circle cx="280" cy="350" r="60" fill="#0F172A" stroke="#475569" stroke-width="12"/>
+    <circle cx="280" cy="350" r="35" fill="#334155" stroke="#64748B" stroke-width="4"/>
+    
+    <circle cx="750" cy="350" r="60" fill="#0F172A" stroke="#475569" stroke-width="12"/>
+    <circle cx="750" cy="350" r="35" fill="#334155" stroke="#64748B" stroke-width="4"/>
+
+    <!-- Dull Headlight -->
+    <path d="M 850 260 L 890 280 L 860 300 Z" fill="#94A3B8" opacity="0.5"/>
+  </g>
+
+  <!-- Banner Overlay Text -->
+  <rect x="50" y="50" width="320" height="50" rx="10" fill="#0B192C" stroke="#475569" stroke-width="2"/>
+  <text x="210" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="20" fill="#94A3B8" text-anchor="middle">BEFORE: DUSTY &amp; UNWASHED</text>
+</svg>

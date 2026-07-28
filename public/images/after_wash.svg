@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="garageBgAfter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B192C"/>
+      <stop offset="50%" stop-color="#0F2C59"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="gleamingSilverPaint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="75%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="mirrorGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0F2C59"/>
+    </linearGradient>
+    <filter id="laserShine" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Clean Executive Parking Garage Background -->
+  <rect width="1200" height="675" fill="url(#garageBgAfter)"/>
+  <rect x="50" y="0" width="100" height="675" fill="#0F2C59" stroke="#38BDF8" stroke-width="2" opacity="0.8"/>
+  <rect x="1050" y="0" width="100" height="675" fill="#0F2C59" stroke="#38BDF8" stroke-width="2" opacity="0.8"/>
+  <line x1="200" y1="580" x2="1000" y2="580" stroke="#38BDF8" stroke-width="8" stroke-dasharray="25 15" opacity="0.8"/>
+
+  <!-- Bright Overhead LED Spotlights -->
+  <ellipse cx="600" cy="80" rx="400" ry="60" fill="#FFFFFF" opacity="0.3" filter="url(#laserShine)"/>
+  <polygon points="400,0 800,0 950,550 250,550" fill="url(#mirrorGlass)" opacity="0.15"/>
+
+  <!-- High Gloss Floor Reflection -->
+  <ellipse cx="550" cy="570" rx="450" ry="50" fill="#38BDF8" opacity="0.25" filter="url(#laserShine)"/>
+
+  <!-- Gleaming Luxury Sedan Body -->
+  <g transform="translate(150, 180)">
+    <!-- Main Chassis with Metallic Silver & Sapphire Reflection -->
+    <path d="M 120 280 C 150 200, 250 140, 420 130 C 580 120, 720 160, 800 220 L 880 260 C 920 280, 930 330, 900 360 C 860 390, 200 390, 100 360 C 80 330, 90 290, 120 280 Z" fill="url(#gleamingSilverPaint)" filter="url(#laserShine)"/>
+    
+    <!-- Mirror Highlight Flare across Hood -->
+    <path d="M 250 200 Q 500 160 800 230" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 300 260 Q 600 240 850 280" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Crystal Clear Glass -->
+    <path d="M 280 160 C 350 145, 480 140, 560 145 C 640 150, 700 180, 730 210 L 300 210 Z" fill="url(#mirrorGlass)"/>
+    <path d="M 320 165 L 420 205" stroke="#FFFFFF" stroke-width="4" opacity="0.8"/>
+
+    <!-- Chrome & Polished Wheels with Blue Brake Calipers -->
+    <circle cx="280" cy="350" r="62" fill="#0B192C" stroke="#FFFFFF" stroke-width="6"/>
+    <circle cx="280" cy="350" r="45" fill="none" stroke="#CBD5E1" stroke-width="10"/>
+    <path d="M 280 305 L 280 395 M 235 350 L 325 350" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="280" cy="350" r="18" fill="#1D4ED8"/>
+
+    <circle cx="750" cy="350" r="62" fill="#0B192C" stroke="#FFFFFF" stroke-width="6"/>
+    <circle cx="750" cy="350" r="45" fill="none" stroke="#CBD5E1" stroke-width="10"/>
+    <path d="M 750 305 L 750 395 M 705 350 L 795 350" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="750" cy="350" r="18" fill="#1D4ED8"/>
+
+    <!-- Laser LED Headlight Beam -->
+    <path d="M 850 260 L 900 275 L 860 305 Z" fill="#FFFFFF" filter="url(#laserShine)"/>
+    <polygon points="890,270 1200,200 1200,400 890,300" fill="#38BDF8" opacity="0.25"/>
+
+    <!-- Sparkle Stars -->
+    <path d="M 450 120 L 455 135 L 470 140 L 455 145 L 450 160 L 445 145 L 430 140 L 445 135 Z" fill="#FFFFFF"/>
+    <path d="M 780 210 L 783 220 L 793 223 L 783 226 L 780 236 L 777 226 L 767 223 L 777 220 Z" fill="#38BDF8"/>
+    <path d="M 220 270 L 223 280 L 233 283 L 223 286 L 220 296 L 217 286 L 207 283 L 217 280 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Banner Overlay Text -->
+  <rect x="50" y="50" width="380" height="50" rx="10" fill="#0F2C59" stroke="#38BDF8" stroke-width="2"/>
+  <text x="240" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#FFFFFF" text-anchor="middle">AFTER AQUALUX MIRROR SHINE</text>
+</svg>

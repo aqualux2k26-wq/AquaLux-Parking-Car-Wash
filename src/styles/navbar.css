@@ -1,0 +1,133 @@
+/* Navbar CSS */
+.navbar-sticky-container {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(11, 25, 44, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(203, 213, 225, 0.15);
+  transition: all 0.3s ease;
+}
+
+.navbar-top-bar {
+  background: linear-gradient(90deg, #0B192C 0%, #0F2C59 50%, #0B192C 100%);
+  border-bottom: 1px solid rgba(203, 213, 225, 0.1);
+  padding: 6px 0;
+  font-size: 0.85rem;
+  color: #CBD5E1;
+}
+
+.navbar-top-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #E2E8F0;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.navbar-top-contact-item:hover {
+  color: #38BDF8;
+}
+
+.navbar-main {
+  padding: 12px 0;
+}
+
+.navbar-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  height: 52px;
+  width: auto;
+  filter: drop-shadow(0 2px 8px rgba(56, 189, 248, 0.2));
+}
+
+.navbar-brand-text {
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  line-height: 1.1;
+}
+
+.navbar-brand-subtext {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  color: #94A3B8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav-link {
+  color: #CBD5E1;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav-link:hover,
+.navbar-nav-link.active {
+  color: #FFFFFF;
+}
+
+.navbar-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #CBD5E1 0%, #38BDF8 100%);
+  transition: width 0.25s ease;
+}
+
+.navbar-nav-link:hover::after,
+.navbar-nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-cta-btn {
+  background: linear-gradient(135deg, #1D4ED8 0%, #0F2C59 100%);
+  color: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.navbar-cta-btn:hover {
+  background: #2563EB;
+  border-color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.mobile-menu-btn {
+  background: transparent;
+  border: 1px solid #CBD5E1;
+  color: #FFFFFF;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
