@@ -14,7 +14,7 @@ export const HomeSection: React.FC = () => {
           <div className="lg:col-span-7">
             <div className="hero-badge">
               <Sparkles className="w-4 h-4 text-sky-400" />
-              <span>Premium On-Site Detailing in Parking Garages</span>
+              <span>Professional Car Wash at Your Parking</span>
             </div>
             <h1 className="hero-title">
               {contentConfig.hero.title}
