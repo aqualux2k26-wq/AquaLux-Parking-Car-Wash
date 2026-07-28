@@ -1,133 +1,325 @@
-/* Navbar CSS */
+/* ===========================================
+   AQUALUX PREMIUM NAVBAR
+=========================================== */
+
+/* Sticky Navbar */
+
 .navbar-sticky-container {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 999;
   background: rgba(11, 25, 44, 0.92);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(203, 213, 225, 0.15);
-  transition: all 0.3s ease;
+  transition: all 0.35s ease;
 }
 
+/* ===========================================
+   Top Bar
+=========================================== */
+
 .navbar-top-bar {
-  background: linear-gradient(90deg, #0B192C 0%, #0F2C59 50%, #0B192C 100%);
-  border-bottom: 1px solid rgba(203, 213, 225, 0.1);
+  background: linear-gradient(
+    90deg,
+    #0b192c 0%,
+    #0f2c59 50%,
+    #0b192c 100%
+  );
+  border-bottom: 1px solid rgba(203, 213, 225, 0.08);
   padding: 6px 0;
-  font-size: 0.85rem;
-  color: #CBD5E1;
 }
 
 .navbar-top-contact-item {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #E2E8F0;
-  transition: color 0.2s ease;
+  color: #e2e8f0;
   text-decoration: none;
+  font-size: 0.82rem;
+  transition: 0.3s;
 }
 
 .navbar-top-contact-item:hover {
-  color: #38BDF8;
+  color: #38bdf8;
 }
+
+/* ===========================================
+   Main Navbar
+=========================================== */
 
 .navbar-main {
   padding: 12px 0;
 }
 
+/* ===========================================
+   Logo
+=========================================== */
+
 .navbar-brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   text-decoration: none;
 }
 
-.navbar-logo-img {
-  height: 52px;
-  width: auto;
-  filter: drop-shadow(0 2px 8px rgba(56, 189, 248, 0.2));
-}
+.navbar-logo-wrapper {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ffffff;
+  border: 2px solid rgba(255,255,255,0.15);
 
-.navbar-brand-text {
-  font-family: var(--font-serif);
-  font-weight: 800;
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-  line-height: 1.1;
-}
-
-.navbar-brand-subtext {
-  font-family: var(--font-sans);
-  font-size: 0.7rem;
-  letter-spacing: 0.25em;
-  color: #94A3B8;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.navbar-nav-list {
   display: flex;
   align-items: center;
-  gap: 28px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+
+  box-shadow:
+    0 8px 24px rgba(0,0,0,.25),
+    0 0 18px rgba(56,189,248,.18);
+
+  transition: all .35s ease;
 }
 
-.navbar-nav-link {
-  color: #CBD5E1;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-decoration: none;
-  position: relative;
-  padding: 6px 0;
-  transition: color 0.2s ease;
+.navbar-logo-wrapper:hover{
+  transform: scale(1.12);
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.35),
+    0 0 25px rgba(56,189,248,.35);
+}
+
+.navbar-logo-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  transition:transform .35s ease;
+}
+
+.navbar-logo-wrapper:hover .navbar-logo-img{
+  transform:scale(1.15);
+}
+
+/* ===========================================
+   Brand Text
+=========================================== */
+
+.navbar-brand-content{
+  display:flex;
+  flex-direction:column;
+}
+
+.navbar-brand-text{
+  font-family:var(--font-serif);
+  font-size:1.75rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  color:#ffffff;
+  line-height:1;
+}
+
+.navbar-brand-subtext{
+  margin-top:4px;
+  font-family:var(--font-sans);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:#94a3b8;
+}
+
+/* ===========================================
+   Navigation
+=========================================== */
+
+.navbar-nav-list{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.navbar-nav-link{
+  position:relative;
+  color:#cbd5e1;
+  text-decoration:none;
+  font-size:.95rem;
+  font-weight:600;
+  padding:8px 0;
+  transition:.3s;
 }
 
 .navbar-nav-link:hover,
-.navbar-nav-link.active {
-  color: #FFFFFF;
+.navbar-nav-link.active{
+  color:#ffffff;
 }
 
-.navbar-nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(90deg, #CBD5E1 0%, #38BDF8 100%);
-  transition: width 0.25s ease;
+.navbar-nav-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0;
+  height:2px;
+  border-radius:20px;
+  background:linear-gradient(
+      90deg,
+      #cbd5e1,
+      #38bdf8
+  );
+  transition:.3s;
 }
 
 .navbar-nav-link:hover::after,
-.navbar-nav-link.active::after {
-  width: 100%;
+.navbar-nav-link.active::after{
+  width:100%;
 }
 
-.navbar-cta-btn {
-  background: linear-gradient(135deg, #1D4ED8 0%, #0F2C59 100%);
-  color: #FFFFFF;
-  border: 1px solid #CBD5E1;
-  padding: 8px 20px;
-  border-radius: 6px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: all 0.25s ease;
+/* ===========================================
+   CTA Button
+=========================================== */
+
+.navbar-cta-btn{
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:10px 22px;
+
+  background:linear-gradient(
+      135deg,
+      #1d4ed8,
+      #0f2c59
+  );
+
+  color:#ffffff;
+  text-decoration:none;
+
+  font-weight:700;
+  font-size:.92rem;
+
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:8px;
+
+  transition:.3s;
 }
 
-.navbar-cta-btn:hover {
-  background: #2563EB;
-  border-color: #FFFFFF;
-  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+.navbar-cta-btn:hover{
+
+  background:#2563eb;
+
+  border-color:#ffffff;
+
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(56,189,248,.30);
 }
 
-.mobile-menu-btn {
-  background: transparent;
-  border: 1px solid #CBD5E1;
-  color: #FFFFFF;
-  padding: 8px;
-  border-radius: 6px;
-  cursor: pointer;
+/* ===========================================
+   Mobile Button
+=========================================== */
+
+.mobile-menu-btn{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  width:44px;
+  height:44px;
+
+  border-radius:8px;
+
+  border:1px solid rgba(255,255,255,.15);
+
+  background:transparent;
+
+  color:#ffffff;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.mobile-menu-btn:hover{
+
+  background:#0f2c59;
+
+  border-color:#38bdf8;
+}
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media(max-width:992px){
+
+  .navbar-logo-wrapper{
+      width:70px;
+      height:70px;
+  }
+
+  .navbar-brand-text{
+      font-size:1.55rem;
+  }
+
+  .navbar-brand-subtext{
+      font-size:.64rem;
+      letter-spacing:.22em;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar-main{
+      padding:10px 0;
+  }
+
+  .navbar-logo-wrapper{
+      width:58px;
+      height:58px;
+  }
+
+  .navbar-brand-logo{
+      gap:12px;
+  }
+
+  .navbar-brand-text{
+      font-size:1.25rem;
+      letter-spacing:.05em;
+  }
+
+  .navbar-brand-subtext{
+      font-size:.55rem;
+      letter-spacing:.18em;
+  }
+
+  .navbar-top-contact-item{
+      font-size:.72rem;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .navbar-logo-wrapper{
+      width:52px;
+      height:52px;
+  }
+
+  .navbar-brand-text{
+      font-size:1.05rem;
+  }
+
+  .navbar-brand-subtext{
+      display:none;
+  }
+
 }

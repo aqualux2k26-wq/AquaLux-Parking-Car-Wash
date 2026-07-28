@@ -52,7 +52,7 @@ export const HomeSection: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="hero-image-frame">
               <img
-                src="/images/hero.svg"
+                src="/images/hero.png"
                 alt="AquaLux Executive Car Detailing in Parking Structure"
                 className="w-full h-auto rounded-2xl"
                 referrerPolicy="no-referrer"

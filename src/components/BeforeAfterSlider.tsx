@@ -9,8 +9,8 @@ interface BeforeAfterSliderProps {
 }
 
 export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({
-  beforeImg = "/images/before_wash.svg",
-  afterImg = "/images/after_wash.svg",
+  beforeImg = "/images/before_wash.png",
+  afterImg = "/images/after_wash.png",
   beforeAlt = "Dirty Car Before AquaLux Wash",
   afterAlt = "Clean Mirror Finish After AquaLux Wash",
 }) => {
