@@ -276,7 +276,7 @@
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
   .navbar-main{
       padding:10px 0;
@@ -288,17 +288,32 @@
   }
 
   .navbar-brand-logo{
-      gap:12px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      max-width:calc(100% - 70px);
+  }
+
+  .navbar-brand-content{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
   }
 
   .navbar-brand-text{
-      font-size:1.25rem;
-      letter-spacing:.05em;
+      font-size:1.15rem;
+      letter-spacing:.04em;
+      line-height:1;
+      white-space:nowrap;
   }
 
   .navbar-brand-subtext{
-      font-size:.55rem;
-      letter-spacing:.18em;
+      display:block;
+      font-size:.48rem;
+      letter-spacing:.10em;
+      line-height:1.1;
+      white-space:nowrap;
+      margin-top:2px;
   }
 
   .navbar-top-contact-item{
@@ -307,19 +322,41 @@
 
 }
 
-@media(max-width:480px){
+@media (max-width:480px){
 
   .navbar-logo-wrapper{
-      width:52px;
-      height:52px;
+      width:50px;
+      height:50px;
+  }
+
+  .navbar-brand-logo{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      max-width:calc(100% - 60px);
+  }
+
+  .navbar-brand-content{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
   }
 
   .navbar-brand-text{
-      font-size:1.05rem;
+      font-size:.95rem;
+      line-height:1;
+      letter-spacing:.03em;
+      white-space:nowrap;
   }
 
   .navbar-brand-subtext{
-      display:none;
+      display:block;
+      font-size:.38rem;
+      letter-spacing:.08em;
+      line-height:1.1;
+      white-space:nowrap;
+      margin-top:2px;
+      color:#94a3b8;
   }
 
 }
