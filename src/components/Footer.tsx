@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div>
             <a href="#home" className="flex items-center gap-3 mb-4 text-decoration-none">
               <img
-                src="/logo/logo.svg"
+                src="/logo/logo.png"
                 alt="AquaLux Parking Car Wash Logo"
                 className="h-12 w-auto"
                 referrerPolicy="no-referrer"
