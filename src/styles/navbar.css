@@ -325,8 +325,8 @@
 @media (max-width:480px){
 
   .navbar-logo-wrapper{
-      width:50px;
-      height:50px;
+      width:60px;
+      height:60px;
   }
 
   .navbar-brand-logo{
@@ -343,7 +343,7 @@
   }
 
   .navbar-brand-text{
-      font-size:.95rem;
+      font-size:1.35rem;
       line-height:1;
       letter-spacing:.03em;
       white-space:nowrap;
@@ -351,7 +351,7 @@
 
   .navbar-brand-subtext{
       display:block;
-      font-size:.38rem;
+      font-size:0.65rem;
       letter-spacing:.08em;
       line-height:1.1;
       white-space:nowrap;
