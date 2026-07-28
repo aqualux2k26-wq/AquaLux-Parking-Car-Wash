@@ -1,8 +1,8 @@
 export const contactConfig = {
-  phoneNumberDisplay: "+1 (800) 555-2782",
-  phoneNumberRaw: "+18005552782",
+  phoneNumberDisplay: "+971558162561",
+  phoneNumberRaw: "+971558162561",
   email: "info@aqualuxparkingcarwash.com",
-  whatsappNumber: "18005552782",
-  whatsappDisplay: "+1 (800) 555-2782",
-  whatsappDefaultMessage: "Hello AquaLux Team! I would like to book a premium car wash session while parked.",
+  whatsappNumber: "+971558162561",
+  whatsappDisplay: "+971558162561",
+  whatsappDefaultMessage: "Hello AquaLux Team! I would like to book a  car wash.",
 };
