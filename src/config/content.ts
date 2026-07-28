@@ -8,7 +8,7 @@ export const contentConfig = {
     { name: "Book a Wash", href: "#book-wash" },
   ],
   hero: {
-    title: "Executive Car Detailing While You Park",
+    title: "Professional Car Wash at Your Parking in UAE",
     subtitle: "AquaLux transforms parking time into a pristine mirror shine using advanced waterless, 100% scratch-free bio-formulations.",
     ctaPrimary: "Book a Wash",
     ctaSecondary: "Explore Services",
